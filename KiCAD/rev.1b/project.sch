@@ -1,0 +1,387 @@
+EESchema Schematic File Version 4
+LIBS:project-cache
+EELAYER 30 0
+EELAYER END
+$Descr User 9843 4724
+encoding utf-8
+Sheet 1 1
+Title "RFM95x Breakout Board"
+Date "2018-10-14"
+Rev "1b"
+Comp "WA"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C1
+U 1 1 5BC27990
+P 5800 1675
+F 0 "C1" V 5548 1675 50  0000 C CNN
+F 1 "10uF" V 5639 1675 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5838 1525 50  0001 C CNN
+F 3 "~" H 5800 1675 50  0001 C CNN
+	1    5800 1675
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5BC27AC8
+P 5525 3175
+F 0 "#PWR04" H 5525 2925 50  0001 C CNN
+F 1 "GND" H 5530 3002 50  0000 C CNN
+F 2 "" H 5525 3175 50  0001 C CNN
+F 3 "" H 5525 3175 50  0001 C CNN
+	1    5525 3175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5BC27B16
+P 6050 1675
+F 0 "#PWR05" H 6050 1425 50  0001 C CNN
+F 1 "GND" V 6055 1547 50  0000 R CNN
+F 2 "" H 6050 1675 50  0001 C CNN
+F 3 "" H 6050 1675 50  0001 C CNN
+	1    6050 1675
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5BC27B78
+P 5525 1325
+F 0 "#PWR03" H 5525 1175 50  0001 C CNN
+F 1 "+3.3V" H 5540 1498 50  0000 C CNN
+F 2 "" H 5525 1325 50  0001 C CNN
+F 3 "" H 5525 1325 50  0001 C CNN
+	1    5525 1325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5525 1325 5525 1675
+Wire Wire Line
+	5525 1675 5650 1675
+Connection ~ 5525 1675
+Wire Wire Line
+	5950 1675 6050 1675
+Wire Wire Line
+	5025 2100 4475 2100
+Wire Wire Line
+	5025 2200 4475 2200
+Wire Wire Line
+	5025 2300 4475 2300
+Wire Wire Line
+	5025 2400 4925 2400
+Wire Wire Line
+	5025 2600 4475 2600
+Wire Wire Line
+	6025 2100 6725 2100
+Wire Wire Line
+	6025 2300 6500 2300
+Wire Wire Line
+	6025 2800 6500 2800
+Wire Wire Line
+	6025 2700 6500 2700
+Wire Wire Line
+	6025 2600 6500 2600
+Wire Wire Line
+	6025 2500 6500 2500
+Wire Wire Line
+	6025 2400 6500 2400
+Wire Wire Line
+	5425 3000 5425 3075
+Wire Wire Line
+	5425 3075 5525 3075
+Wire Wire Line
+	5625 3075 5625 3000
+Wire Wire Line
+	5525 3000 5525 3075
+Connection ~ 5525 3075
+Wire Wire Line
+	5525 3075 5625 3075
+Wire Wire Line
+	5525 3075 5525 3175
+Text Label 4525 2100 0    50   ~ 0
+SCK
+Text Label 4525 2200 0    50   ~ 0
+MOSI
+Text Label 4525 2300 0    50   ~ 0
+MISO
+Text Label 4525 2400 0    50   ~ 0
+NSS
+Text Label 4525 2600 0    50   ~ 0
+RST
+Text Label 6275 2300 0    50   ~ 0
+DIO5
+Text Label 6275 2400 0    50   ~ 0
+DIO4
+Text Label 6275 2500 0    50   ~ 0
+DIO3
+Text Label 6275 2600 0    50   ~ 0
+DIO2
+Text Label 6275 2700 0    50   ~ 0
+DIO1
+Text Label 6275 2800 0    50   ~ 0
+DIO0
+$Comp
+L Connector:Conn_Coaxial J3
+U 1 1 5BC28DAD
+P 6925 2100
+F 0 "J3" H 7024 2076 50  0000 L CNN
+F 1 "Conn_Coaxial" H 7024 1985 50  0000 L CNN
+F 2 "lib_fp:Connector_Coaxial_SMA_edge_combined" H 6925 2100 50  0001 C CNN
+F 3 " ~" H 6925 2100 50  0001 C CNN
+	1    6925 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5BC28DCF
+P 6925 2350
+F 0 "#PWR07" H 6925 2100 50  0001 C CNN
+F 1 "GND" H 6930 2177 50  0000 C CNN
+F 2 "" H 6925 2350 50  0001 C CNN
+F 3 "" H 6925 2350 50  0001 C CNN
+	1    6925 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6925 2300 6925 2350
+$Comp
+L Device:R R1
+U 1 1 5BC2924A
+P 4925 1700
+F 0 "R1" H 4995 1746 50  0000 L CNN
+F 1 "10k" H 4995 1655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4855 1700 50  0001 C CNN
+F 3 "~" H 4925 1700 50  0001 C CNN
+	1    4925 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5BC292A2
+P 4925 1325
+F 0 "#PWR01" H 4925 1175 50  0001 C CNN
+F 1 "+3.3V" H 4940 1498 50  0000 C CNN
+F 2 "" H 4925 1325 50  0001 C CNN
+F 3 "" H 4925 1325 50  0001 C CNN
+	1    4925 1325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 1325 4925 1475
+Wire Wire Line
+	4925 1850 4925 2400
+Connection ~ 4925 2400
+Wire Wire Line
+	4925 2400 4475 2400
+Wire Wire Line
+	1900 2225 1475 2225
+Wire Wire Line
+	1900 2325 1475 2325
+Wire Wire Line
+	1900 2425 1475 2425
+Wire Wire Line
+	1900 2525 1475 2525
+Wire Wire Line
+	1900 2625 1475 2625
+Text Label 1525 2225 0    50   ~ 0
+MISO
+Text Label 1525 2325 0    50   ~ 0
+MOSI
+Text Label 1525 2425 0    50   ~ 0
+SCK
+Text Label 1525 2525 0    50   ~ 0
+NSS
+Text Label 1525 2625 0    50   ~ 0
+RST
+Wire Wire Line
+	3075 2125 3575 2125
+Wire Wire Line
+	3075 2225 3575 2225
+Wire Wire Line
+	3075 2325 3575 2325
+Wire Wire Line
+	3075 2525 3575 2525
+Wire Wire Line
+	3075 2625 3575 2625
+Text Label 3350 2125 0    50   ~ 0
+DIO2
+Text Label 3350 2225 0    50   ~ 0
+DIO1
+Text Label 3350 2325 0    50   ~ 0
+DIO0
+Text Label 3350 2525 0    50   ~ 0
+DIO4
+Text Label 3350 2625 0    50   ~ 0
+DIO3
+$Comp
+L Connector_Generic:Conn_01x07 J1
+U 1 1 5BC2D76F
+P 2100 2425
+F 0 "J1" H 2075 2925 50  0000 L CNN
+F 1 "Conn_01x07" H 1900 2850 50  0000 L CNN
+F 2 "lib_fp:PinHeader_1x07_P2.54mm_Vertical_2" H 2100 2425 50  0001 C CNN
+F 3 "~" H 2100 2425 50  0001 C CNN
+	1    2100 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x07 J2
+U 1 1 5BC2D860
+P 2875 2425
+F 0 "J2" H 2850 2925 50  0000 L CNN
+F 1 "Conn_01x07" H 2675 2850 50  0000 L CNN
+F 2 "lib_fp:PinHeader_1x07_P2.54mm_Vertical_2" H 2875 2425 50  0001 C CNN
+F 3 "~" H 2875 2425 50  0001 C CNN
+	1    2875 2425
+	-1   0    0    -1  
+$EndComp
+Text Label 6325 2100 0    50   ~ 0
+ANT
+Wire Wire Line
+	3075 2725 3575 2725
+Wire Wire Line
+	1900 2725 1475 2725
+Text Label 1525 2725 0    50   ~ 0
+DIO5
+Text Label 3375 2725 0    50   ~ 0
+ANT
+Wire Wire Line
+	1900 2125 1825 2125
+Wire Wire Line
+	1825 2125 1825 3125
+Wire Wire Line
+	3075 2425 3175 2425
+Wire Wire Line
+	3175 2425 3175 1325
+$Comp
+L power:GND #PWR02
+U 1 1 5BC2F9B7
+P 1825 3125
+F 0 "#PWR02" H 1825 2875 50  0001 C CNN
+F 1 "GND" H 1830 2952 50  0000 C CNN
+F 2 "" H 1825 3125 50  0001 C CNN
+F 3 "" H 1825 3125 50  0001 C CNN
+	1    1825 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR06
+U 1 1 5BC2FA01
+P 3175 1325
+F 0 "#PWR06" H 3175 1175 50  0001 C CNN
+F 1 "+3.3V" H 3190 1498 50  0000 C CNN
+F 2 "" H 3175 1325 50  0001 C CNN
+F 3 "" H 3175 1325 50  0001 C CNN
+	1    3175 1325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5BC376AD
+P 4525 1325
+F 0 "#FLG0101" H 4525 1400 50  0001 C CNN
+F 1 "PWR_FLAG" H 4525 1499 50  0000 C CNN
+F 2 "" H 4525 1325 50  0001 C CNN
+F 3 "~" H 4525 1325 50  0001 C CNN
+	1    4525 1325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4525 1475 4925 1475
+Connection ~ 4925 1475
+Wire Wire Line
+	4925 1475 4925 1550
+Wire Wire Line
+	4525 1325 4525 1475
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5BC38C6A
+P 4600 3050
+F 0 "#FLG0102" H 4600 3125 50  0001 C CNN
+F 1 "PWR_FLAG" H 4600 3224 50  0000 C CNN
+F 2 "" H 4600 3050 50  0001 C CNN
+F 3 "~" H 4600 3050 50  0001 C CNN
+	1    4600 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5BC38CCC
+P 4600 3175
+F 0 "#PWR0101" H 4600 2925 50  0001 C CNN
+F 1 "GND" H 4605 3002 50  0000 C CNN
+F 2 "" H 4600 3175 50  0001 C CNN
+F 3 "" H 4600 3175 50  0001 C CNN
+	1    4600 3175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3050 4600 3175
+$Comp
+L Device:LED D1
+U 1 1 5BC3DBA4
+P 8025 2425
+F 0 "D1" V 8063 2308 50  0000 R CNN
+F 1 "LED" V 7972 2308 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 8025 2425 50  0001 C CNN
+F 3 "~" H 8025 2425 50  0001 C CNN
+	1    8025 2425
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BC3DC52
+P 8025 2000
+F 0 "R2" H 7955 1954 50  0000 R CNN
+F 1 "330" H 7955 2045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7955 2000 50  0001 C CNN
+F 3 "~" H 8025 2000 50  0001 C CNN
+	1    8025 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5BC3DCA5
+P 8025 3075
+F 0 "#PWR09" H 8025 2825 50  0001 C CNN
+F 1 "GND" H 8030 2902 50  0000 C CNN
+F 2 "" H 8025 3075 50  0001 C CNN
+F 3 "" H 8025 3075 50  0001 C CNN
+	1    8025 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR08
+U 1 1 5BC3DCEC
+P 8025 1300
+F 0 "#PWR08" H 8025 1150 50  0001 C CNN
+F 1 "+3.3V" H 8040 1473 50  0000 C CNN
+F 2 "" H 8025 1300 50  0001 C CNN
+F 3 "" H 8025 1300 50  0001 C CNN
+	1    8025 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8025 1300 8025 1850
+Wire Wire Line
+	8025 2150 8025 2275
+Wire Wire Line
+	8025 2575 8025 3075
+Wire Wire Line
+	5525 1675 5525 1900
+$Comp
+L rfm95w-868s2:RFM95W-868S2 U1
+U 1 1 5DB4FF16
+P 5525 2400
+F 0 "U1" H 5250 2975 50  0000 C CNN
+F 1 "RFM95W" H 5250 2875 50  0000 C CNN
+F 2 "lib_fp:RFM95W" H 2225 4050 50  0001 C CNN
+F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf" H 2225 4050 50  0001 C CNN
+	1    5525 2400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

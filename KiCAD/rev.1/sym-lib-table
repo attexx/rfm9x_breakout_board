@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name project-rescue)(type Legacy)(uri ${KIPRJMOD}/project-rescue.lib)(options "")(descr ""))
+  (lib (name rfm95w-868s2-rf_am_fm)(type Legacy)(uri ${KIPRJMOD}/lib_sch/rfm95w-868s2-rf_am_fm.lib)(options "")(descr ""))
+)
