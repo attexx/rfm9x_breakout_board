@@ -29,8 +29,8 @@ Noting special on the schematic. The components R1, R2 and D1 are optional and c
 #### Revision 1b:
 
 Updates in revision 1b include:
-- Added support for SMD u.Fl antenna connector
-- Added open source hardware logo to the layout of the board
+- added support for SMD u.Fl antenna connector
+- added open source hardware logo to the layout of the board
 
 _top side_<br />
 <img width="200px" src="https://user-images.githubusercontent.com/15846193/67626468-06650f00-f84c-11e9-9a32-1fd6ca4eea67.png">
