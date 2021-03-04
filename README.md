@@ -7,7 +7,7 @@
 
 ### Description
 
-The RFM9x Breakout Board is a breadboard friendly PCB, converting the 2mm pitch connectors on the HopeRF modules to a more user friendly 2.54mm (0.100″) pitch footprint, used in standard breadboards. Using the breadboard, the developers can easily create IoT modules with 430Mhz, 868Mhz or 905Mhz in their projects and add LoRaWAN capabilities to them.
+The RFM9x Breakout Board is a breadboard friendly PCB, converting the 2mm pitch connectors on the HopeRF modules to a more user friendly 2.54mm (0.100″) pitch footprint, used in standard breadboards. Using the breadboard, the developers can easily create IoT modules with 430MHz, 868MHz or 905MHz in their projects and add LoRaWAN capabilities to them.
 
 ### Features
 
