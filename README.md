@@ -70,8 +70,8 @@ The most recent version (rev. 1b) is tested and works fine. Previous version (re
 
 ### Purchase
 
-The board can be purchased from the [AISLER.net](https://aisler.net/) web store by clicking on thes [link](https://aisler.net/p/BNYBJOFL). You can also try to purchase it from 
-the [PCBs.io](https://PCBs.io/share/4QJV1) web store. If you do so, PCBs.io gives me a small reward that helps when I purchase some newly created boards.
+The board can be purchased from the [AISLER.net](https://aisler.net/) web store by clicking on this [link](https://aisler.net/p/BNYBJOFL). You can also try to purchase it from 
+the [PCBs.io](https://PCBs.io/share/4QJV1) web store, but be aware that recently this site has been inactive, so ordering the board through it may not be successful.
 
 ## License
 
